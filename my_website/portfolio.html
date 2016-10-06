@@ -1,0 +1,71 @@
+<!doctype html>
+
+<!-- http://www.w3schools.com/tags/default.asp ⇦ The good stuff -->
+<!-- It's like StackOverflow and the Java API all in one -->
+<!-- Similar thing for actual javascript: http://html5index.org/ -->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>David's Fortpolio</title>
+  <style type="text/css">
+    #mainContent {
+	    font-family: Helvetica;
+	    font-size: xx-large;
+	    font-weight: bold;
+	    background-color: #E3F0FB;
+	    border-radius: 4px;
+	    padding: 10px;
+	    text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mainContent">
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Fortpolio</a>
+    <h1>This is David's Fortpolio Page!</h1>
+    <h3>BTW, use Command + Option + K to access the console for debugging!</h1>
+    <img src="images/portfolio.jpg" alt="Fortpolio?" height="250">
+    <br>
+  
+    <a target="_blank" href="https://scratch.mit.edu">
+      <img src="images/scratchlogo.png" alt="So I guess this is a Scrath logo...?" height="100">
+    </a>
+    <br>
+    
+    <p id="demo">For some reason, this thing abolutely *refuses* to work half the time, not matter what. If anything breaks, try refreshing the page.</p>
+    
+        <p>Don't worry if it looks like something off/missing; couldn't get javascript working, was still in the middle of bugtesting. Button(s) are there for being buttons</p>
+    
+    <p><!-- <a href="#" onClick="doText();">Only Text</a></p> Produces an undefined object...? -->
+  </div>
+  <script type="text/javascript" charset="UTF-8">
+    //Good news: it runs fine
+    //Bad news: it basically does nothing
+    var personThing = "var";
+    var hisText = document.getElementById(personThing);
+    
+    //upon loading the page, console immediately declares "TypeError: document.getElementById(...) is null"
+    String("Hello, world!"); //No idea what this is doing. Apparently nothing, though...
+  
+    doText();
+    var tryText = doText();
+  
+    function doText() {
+	    var yourText = "Hello again, world!";
+	    document.write(yourText);
+	    document.write(String);
+	    return 70;
+    }
+    
+    console.log(tryText);
+    
+    /**
+     * Clicking both the Middle and Top button will produce a "TypeError: yourText is undefined"
+     * One for the former, two for the latter
+     */
+  </script>
+</body>
+</html>
