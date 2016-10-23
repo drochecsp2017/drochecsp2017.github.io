@@ -9,10 +9,19 @@
   <meta charset="utf-8">
   <title>David's Fortpolio</title>
   <style type="text/css">
-    #mainContent {
+    #headerContent {
 	    font-family: Helvetica;
 	    font-size: xx-large;
 	    font-weight: bold;
+	    background-color: #E3F0FB;
+	    border-radius: 4px;
+	    padding: 10px;
+	    text-align: center;
+    }
+    
+    #mainContent {
+	    font-family: Helvetica;
+	    font-size: medium;
 	    background-color: #E3F0FB;
 	    border-radius: 4px;
 	    padding: 10px;
@@ -22,24 +31,25 @@
 </head>
 
 <body>
-  <div id="mainContent">
+  <div id="headerContent">
     <a href="index.html">Home</a>
     <a href="portfolio.html">Fortpolio</a>
     <h1>This is David's Fortpolio Page!</h1>
-    <h3>BTW, use Command + Option + K to access the console for debugging!</h1>
+    <h3>BTW, use Command + Option + K (Mac) to access the console for debugging!</h3>
     <img src="images/portfolio.jpg" alt="Fortpolio?" height="250">
     <br>
+  </div>
   
+  <div id="mainContent">
+    <h1>Projects and Other Work</h1>
     <a target="_blank" href="https://scratch.mit.edu">
       <img src="images/scratchlogo.png" alt="So I guess this is a Scrath logo...?" height="100">
     </a>
-    <br>
+    <h2>Now including various works by Scratch!</h2>
+    <p> • Ghostbusters version 1:</p><br>
+    <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/126481879/?autostart=false" frameborder="0" allowfullscreen></iframe>
     
-    <p id="demo">For some reason, this thing abolutely *refuses* to work half the time, not matter what. If anything breaks, try refreshing the page.</p>
-    
-        <p>Don't worry if it looks like something off/missing; couldn't get javascript working, was still in the middle of bugtesting. Button(s) are there for being buttons</p>
-    
-    <p><!-- <a href="#" onClick="doText();">Only Text</a></p> Produces an undefined object...? -->
+    <p id="demo">Note: Internally-speaking, most of this page is emdebbed Javascript code I couldn't get to work. Anything you see below this would be that. And yes, it's a mess.</p>
   </div>
   <script type="text/javascript" charset="UTF-8">
     //Good news: it runs fine
